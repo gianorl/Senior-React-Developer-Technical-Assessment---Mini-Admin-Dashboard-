@@ -16,6 +16,12 @@ untuk saya sendiri biasanya menggunakan nvm (Node Version Manager) untuk memperm
 pnpm install
 ```
 
+2. Untuk check linter biome anda bisa menjalankan perintah :
+
+```bash
+pnpm run lint
+```
+
 2. Buka dua terminal berbeda
 3. Terminal pertama untuk menjalankan **mock API** (json-server) :
 
