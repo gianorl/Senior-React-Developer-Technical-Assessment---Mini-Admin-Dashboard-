@@ -20,7 +20,7 @@ pnpm install
 3. Terminal pertama untuk menjalankan **mock API** (json-server) :
 
    ```bash
-   pnpm mock-api
+   pnpm run mock-api
    ```
 
    Perintah di atas otomatis menjalankan `mock-api/db.json` pada port **3001** secara default.
@@ -28,7 +28,7 @@ pnpm install
 4. Terminal kedua untuk menjalankan **Vite dev server** :
 
    ```bash
-   pnpm dev
+   pnpm run dev
    ```
 
 5. Buka applikasi pada browser di url berikut (Vite default: **http://localhost:5173**).

@@ -47,7 +47,7 @@ function readPersistedAccounts(): PersistedAccount[] {
         typeof (row as PersistedAccount).email === "string" &&
         typeof (row as PersistedAccount).password === "string" &&
         typeof (row as PersistedAccount).first_name === "string" &&
-        typeof (row as PersistedAccount).last_name === "string",
+        typeof (row as PersistedAccount).last_name === "string"
     );
   } catch {
     return [];
@@ -65,11 +65,8 @@ function newUserId(): string {
 }
 
 function accountExistsForEmail(emailLower: string): boolean {
-  if (MOCK_ACCOUNTS.some((a) => a.email.toLowerCase() === emailLower))
-    return true;
-  return readPersistedAccounts().some(
-    (a) => a.email.toLowerCase() === emailLower,
-  );
+  if (MOCK_ACCOUNTS.some((a) => a.email.toLowerCase() === emailLower)) return true;
+  return readPersistedAccounts().some((a) => a.email.toLowerCase() === emailLower);
 }
 
 export async function loginWithEmailAndPassword(data: {
@@ -82,12 +79,10 @@ export async function loginWithEmailAndPassword(data: {
 
   const account =
     MOCK_ACCOUNTS.find(
-      (a) =>
-        a.email.toLowerCase() === emailLower && a.password === data.password,
+      (a) => a.email.toLowerCase() === emailLower && a.password === data.password
     ) ??
     readPersistedAccounts().find(
-      (a) =>
-        a.email.toLowerCase() === emailLower && a.password === data.password,
+      (a) => a.email.toLowerCase() === emailLower && a.password === data.password
     );
 
   if (!account) {
