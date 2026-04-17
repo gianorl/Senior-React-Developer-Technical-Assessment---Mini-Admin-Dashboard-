@@ -1,7 +1,9 @@
-Compatibility Note:
+**Compatibility Note:**
 Sebelum menjalankan apps, pertama-tama check terlebih dahulu node yang terinstall pada device masing masing. Karena apps ini dibuat menggunakan vite, sesuai dengan informasi yang ada di dokumentasi vite membutuhkan setidaknya node js versi 2019, 22.12+. Untuk penjelasan lebih lanjut bisa akses *https://vite.dev/guide/*
 
 untuk saya sendiri biasanya menggunakan nvm (Node Version Manager) untuk mempermudah pergantian version node itu sendiri untuk penjelasan lebih detailnya bisa diakses melalui github link berikut *https://github.com/nvm-sh/nvm*
+
+**IMPORTANT** selalu check versi dari node.js yang terinstall dimohon untuk memastikan versi node.js sesuai dengan instruksi di atas.
 
 ## 1. Bagaimana cara untuk menjalankan aplikasi?
 
